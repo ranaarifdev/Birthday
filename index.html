@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffafd">
+  <meta name="description" content="A birthday surprise made with friendship and best wishes for Valija Rameen.">
+  <title>Happy Birthday, Valija Rameen! | A Friendship Surprise</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="loading-screen" aria-hidden="true"><div class="loader-content"><span class="loader-heart">♥</span><p>Preparing a little birthday magic...</p></div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✿</span><span>For Valija Rameen</span></a>
+      <nav class="primary-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html">Welcome</a><a href="letter.html">A Letter</a><a href="friendship.html">Friendship</a><a href="smiles.html">20 Smiles</a><a href="surprise.html">Surprise</a><a href="wishes.html">Wishes</a><a href="finale.html">Finale</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-music-toggle aria-label="Turn birthday music on" aria-pressed="false" title="Birthday music">🎵</button>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false" title="Toggle theme">🌙</button>
+        <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-shell" aria-labelledby="welcome-title">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">A little surprise, made just for you</span>
+          <h1 id="welcome-title">Something beautiful is <span class="gradient-text">waiting for you...</span></h1>
+          <p class="type-line" data-typing aria-live="polite"></p>
+          <p class="lead">A whole little journey of kind words, bright wishes, and birthday magic — because a wonderful friend like you deserves to feel celebrated.</p>
+          <div class="button-row">
+            <a class="button" href="#celebration">Open your birthday surprise <span aria-hidden="true">💝</span></a>
+            <button class="button secondary" type="button" data-action="random-wish">A little wish ✨</button>
+          </div>
+          <p class="wish-result" data-wish-result aria-live="polite"></p>
+        </div>
+        <div class="hero-art" aria-label="A teddy bear with a birthday gift">
+          <div class="art-orbit" aria-hidden="true"></div>
+          <div class="teddy-card"><span class="teddy" aria-hidden="true">🧸</span><span class="gift-emoji" aria-hidden="true">🎁</span></div>
+          <span class="sparkle s1" aria-hidden="true">✦</span><span class="sparkle s2" aria-hidden="true">✧</span><span class="sparkle s3" aria-hidden="true">✦</span>
+          <span class="floaty heart" aria-hidden="true">♥</span><span class="floaty flower" aria-hidden="true">🌸</span>
+          <span class="balloon b1" aria-hidden="true">🎈</span><span class="balloon b2" aria-hidden="true">🎈</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#celebration">Scroll for the celebration ↓</a>
+    </section>
+
+    <section class="section page-shell" id="celebration" aria-labelledby="birthday-title">
+      <div class="celebration reveal">
+        <div class="celebration-inner">
+          <div class="cake" aria-hidden="true">🎂</div>
+          <div class="birthday-copy">
+            <span class="eyebrow">Today we celebrate you</span>
+            <h2 id="birthday-title" class="gradient-text">Happy Birthday,<br>Valija Rameen!</h2>
+            <p>Today is not just another day. It is the day a wonderful person came into this world. May your life always be filled with happiness, peace, success, laughter, and countless beautiful moments.</p>
+            <div class="button-row">
+              <button class="button" type="button" data-action="wish">Make a birthday wish <span aria-hidden="true">✨</span></button>
+              <a class="button secondary" href="letter.html">Continue the journey →</a>
+            </div>
+            <p class="wish-result" data-wish-result aria-live="polite"></p>
+            <div class="countdown" data-countdown aria-label="Countdown to the next birthday">
+              <div class="time-box"><strong data-time>--</strong><span>Days</span></div>
+              <div class="time-box"><strong data-time>--</strong><span>Hours</span></div>
+              <div class="time-box"><strong data-time>--</strong><span>Minutes</span></div>
+              <div class="time-box"><strong data-time>--</strong><span>Seconds</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Made with friendship, respect &amp; lots of best wishes <span class="footer-heart">♥</span><br>For Valija Rameen · 9 November</footer>
+  <button class="icon-button back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
