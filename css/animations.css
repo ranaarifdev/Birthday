@@ -1,0 +1,51 @@
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@keyframes petal-fall {
+  0% { opacity: 0; transform: translate3d(0, -30px, 0) rotate(0); }
+  12% { opacity: .8; }
+  100% { opacity: 0; transform: translate3d(55px, 420px, 0) rotate(280deg); }
+}
+
+.falling-petal {
+  position: absolute;
+  top: -25px;
+  z-index: 0;
+  pointer-events: none;
+  animation-name: petal-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.firework {
+  position: fixed;
+  z-index: 90;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--firework-color);
+  box-shadow: 0 -25px 0 var(--firework-color), 18px -18px 0 var(--firework-color),
+    25px 0 0 var(--firework-color), 18px 18px 0 var(--firework-color),
+    0 25px 0 var(--firework-color), -18px 18px 0 var(--firework-color),
+    -25px 0 0 var(--firework-color), -18px -18px 0 var(--firework-color);
+  pointer-events: none;
+  animation: firework-pop .8s ease-out forwards;
+}
+
+@keyframes firework-pop {
+  0% { opacity: 0; transform: scale(.1); }
+  35% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .falling-petal { display: none; }
+  .firework { display: none; }
+}

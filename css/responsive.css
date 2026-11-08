@@ -1,0 +1,71 @@
+@media (max-width: 1000px) {
+  .header-inner { width: min(100% - 32px, 900px); }
+  .primary-nav { gap: 0; }
+  .primary-nav a { padding-inline: 8px; font-size: .78rem; }
+  .header-actions { gap: 5px; }
+}
+
+@media (max-width: 780px) {
+  .header-inner { min-height: 68px; }
+  .menu-toggle { display: inline-grid; }
+  .primary-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 12px;
+    left: 12px;
+    display: none;
+    padding: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+  .primary-nav.is-open { display: flex; animation: rise-in .2s ease both; }
+  .primary-nav a { padding: 11px 14px; font-size: .9rem; }
+  .hero { min-height: auto; padding: 68px 0 74px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 10px; text-align: center; }
+  .hero-copy .lead { margin-inline: auto; }
+  .button-row { justify-content: center; }
+  .hero-art { min-height: 330px; }
+  .art-orbit { width: min(290px, 74vw); }
+  .teddy-card { width: min(245px, 70vw); }
+  .scroll-cue { bottom: 20px; }
+  .celebration-inner { grid-template-columns: 1fr; gap: 0; text-align: center; }
+  .cake { min-height: 190px; }
+  .countdown { justify-content: center; }
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 68px 0; }
+}
+
+@media (max-width: 520px) {
+  .lock-screen { padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom)); }
+  .lock-card { padding: 26px 18px; }
+  .lock-countdown { margin-top: 23px; gap: 7px; }
+  .lock-time { padding-inline: 3px; border-radius: 14px; }
+  .lock-time span { letter-spacing: .03em; }
+  .lock-unlocked .button { width: 100%; padding-inline: 12px; }
+  .lock-decoration.lock-heart { left: 3%; }
+  .lock-decoration.lock-star { right: 4%; }
+  .lock-decoration.lock-flower { right: 3%; }
+  .header-inner { width: calc(100% - 24px); gap: 8px; }
+  .brand { gap: 6px; font-size: .9rem; }
+  .brand-mark { font-size: 1.15rem; }
+  .header-actions { gap: 5px; }
+  .icon-button, .menu-toggle { width: 38px; height: 38px; }
+  .page-shell { width: calc(100% - 30px); }
+  h1 { font-size: clamp(2.6rem, 13vw, 4rem); }
+  .page-hero { padding: 56px 0 34px; }
+  .card-grid, .placeholder-grid { grid-template-columns: 1fr; }
+  .card { padding: 23px; }
+  .compliment-card { min-height: 160px; }
+  .countdown { gap: 6px; }
+  .time-box { min-width: 55px; padding: 8px 7px; }
+  .time-box strong { font-size: 1.1rem; }
+  .gift-stage { min-height: 410px; }
+  .envelope { height: 225px; }
+  .finale { border-radius: 24px; }
+  .button-row { gap: 9px; }
+  .button { padding-inline: 17px; }
+}

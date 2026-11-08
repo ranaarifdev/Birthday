@@ -13,7 +13,29 @@
   <script src="js/main.js" defer></script>
   <script src="js/interactions.js" defer></script>
 </head>
-<body data-page="home">
+<body class="is-locked" data-page="home">
+  <section class="lock-screen" data-birthday-lock aria-live="off" aria-labelledby="lock-title">
+    <div class="lock-card">
+      <span class="lock-kicker">A little note for you</span>
+      <h1 id="lock-title">Something Special Is Waiting For You... <span aria-hidden="true">💝</span></h1>
+      <p class="lock-teaser">Dear Valija Rameen, someone has prepared a little surprise for you!</p>
+      <div class="lock-countdown" data-lock-countdown aria-label="Countdown to 9 November at midnight local time">
+        <div class="lock-time"><strong data-lock-days>--</strong><span>Days</span></div>
+        <div class="lock-time"><strong data-lock-hours>--</strong><span>Hours</span></div>
+        <div class="lock-time"><strong data-lock-minutes>--</strong><span>Minutes</span></div>
+        <div class="lock-time"><strong data-lock-seconds>--</strong><span>Seconds</span></div>
+      </div>
+      <div class="lock-unlocked" data-lock-unlocked hidden>
+        <h2>IT'S YOUR SPECIAL DAY, VALIJA RAMEEN! 🎂💗</h2>
+        <p>Happy Birthday! Your surprise is finally here!</p>
+        <button class="button" type="button" data-open-birthday>Open Your Birthday Surprise 💝</button>
+      </div>
+      <p class="lock-timezone">The countdown follows your device's local time.</p>
+    </div>
+    <span class="lock-decoration lock-heart" aria-hidden="true">♥</span>
+    <span class="lock-decoration lock-flower" aria-hidden="true">✿</span>
+    <span class="lock-decoration lock-star" aria-hidden="true">✦</span>
+  </section>
   <div class="loading-screen" aria-hidden="true"><div class="loader-content"><span class="loader-heart">♥</span><p>Preparing a little birthday magic...</p></div></div>
   <header class="site-header">
     <div class="header-inner">
